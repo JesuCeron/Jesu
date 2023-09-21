@@ -1,0 +1,979 @@
+body {
+  font-family: "Phudu", cursive;
+  margin: 0;
+  padding: 0;
+  padding-top: 0;
+}
+
+header {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #69adc0;
+  /* position: fixed; esto hace que el contenido se mueva con la pantalla cuando se baja el scroll */
+}
+
+#Logo {
+  position: absolute;
+  font-family: "Phudu", cursive;
+  padding-top: 10px;
+  margin: 0;
+  padding-left: 2%;
+  font-size: 30px;
+  letter-spacing: 6px;
+  transition: all 1s;
+  color: white;
+}
+
+#Logo:hover {
+  color: black;
+  letter-spacing: 14px;
+}
+
+nav {
+  padding-left: 74%;
+  display: flex;
+}
+
+nav > :hover {
+  padding-top: 2px;
+}
+
+h3 {
+  font-family: "Phudu", cursive;
+  padding-left: 30px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.Intro {
+  background-image: url("img/front.jpg"); /* Replace with your image path */
+  background-size: 100%; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+  color: white; /* Text color for better visibility on the background */
+  padding: 120px;
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.Hola {
+  font-size: 25px;
+
+  animation: bounce 3s infinite; /* Apply the animation to the element */
+}
+
+@keyframes shadow-animation {
+  0% {
+    box-shadow: 0px 0px 0px white;
+  }
+
+  100% {
+    box-shadow: 0px 0px 30px white;
+  }
+}
+
+.contactar {
+  display: flex;
+  position: fixed;
+  margin-left: 1370px;
+  margin-top: 320px;
+  border-radius: 20px;
+  background-color: #4bbc45;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: white;
+  border-width: 2px;
+  border-style: solid;
+  box-shadow: 0px 0px 0px white;
+  animation: shadow-animation 3s ease-in-out infinite alternate;
+}
+
+.mensaje {
+  padding-top: 5px;
+  color: white;
+  font-size: 20px;
+  font-family: "Phudu", cursive;
+  margin: 0;
+  padding-right: 10px;
+}
+
+.whatsapp {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 7px;
+  padding-left: 10px;
+  margin-top: 0px;
+  width: 30px;
+  height: 30px;
+}
+
+#correo {
+  display: flex;
+  position: fixed;
+  margin-left: 1370px;
+  margin-top: 370px;
+  border-radius: 20px;
+  background-color: #e54239;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: white;
+  border-width: 2px;
+  border-style: solid;
+  box-shadow: 0px 0px 0px white;
+  animation: shadow-animation 3s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+
+.texto {
+  padding-top: 5px;
+  color: white;
+  font-size: 20px;
+  font-family: "Phudu", cursive;
+  margin: 0;
+  padding-right: 25px;
+}
+
+.email {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 7px;
+  padding-left: 20px;
+  margin-top: 0px;
+  width: 30px;
+  height: 30px;
+}
+
+#contenedor-modal {
+  position: fixed;
+  background-color: #fea24d;
+  top: 30%;
+  left: 38%;
+  width: 500px;
+  height: 320px;
+  font-size: 10px;
+  color: #d63a5f;
+  border-radius: 12px;
+  border-style: solid;
+  text-align: center;
+  border-color: black;
+  display: none;
+}
+
+
+#Modaltexto1 {
+  color: #47476d;
+}
+
+#Titulomodal {
+  font-size: 16px;
+  padding-top: 10px;
+  width: fit-content;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+#EmailModal {
+  width: 200px;
+}
+
+#TextoModal {
+  width: 400px;
+  height: 80px;
+}
+
+.btn {
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: "Phudu", cursive;
+  background-color: #69adc0;
+  color: white;
+  cursor: pointer;
+
+}
+
+.contactar:hover {
+  box-shadow: 0px 0px 20px white;
+}
+
+#EmailModal {
+  border-color: black;
+}
+
+#TextoModal {
+  border-color: black;
+}
+
+#Nombre {
+  color: #d63a5f;
+  font-size: 24px;
+}
+
+.Presentacion {
+  padding-left: 12%;
+  width: 320px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.separar {
+  margin-bottom: 50px;
+}
+
+.Boton {
+  background-color: #d63a5f;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+  margin-left: 110px;
+  font-family: "Phudu", cursive;
+  color: white;
+  font-size: 22px;
+  border-color: white;
+  transition-duration: 0.5s;
+  width: max-content;
+  border-style: solid;
+}
+
+.Boton:hover {
+  background-color: #fea24d;
+  cursor: pointer;
+}
+
+.Resumen {
+  display: flex;
+  width: 100%;
+  height: 25em;
+}
+
+#Skill {
+  background-color: #009b79;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+  border-top-color: black;
+  border-bottom-color: black;
+}
+
+.colum1 {
+  padding-top: 30px;
+  font-size: medium;
+  color: white;
+  background-color: #fea24d;
+}
+
+.colum2 {
+  padding-top: 30px;
+  font-size: medium;
+  color: white;
+  background-color: #47476d;
+}
+.colum3 {
+  padding-top: 30px;
+  font-size: medium;
+  color: white;
+  background-color: #69adc0;
+}
+
+.Titulos {
+  font-size: 22px;
+  color: #d63a5f;
+  padding-left: 37px;
+  margin-bottom: 35px;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  background-color: #d63a5f;
+}
+
+footer h3 {
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  color: white;
+  font-size: large;
+}
+
+.foo {
+  color: black;
+  padding-left: 10px;
+  text-shadow: none;
+}
+
+.foo1 {
+  padding-left: 0px;
+  color: black;
+  text-shadow: none;
+}
+
+.SocialMedia {
+  display: flex;
+  color: black;
+  margin-left: 56%;
+}
+
+a {
+  padding-top: 23px;
+  margin-left: 18px;
+  color: #47476d;
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    font-family: "Phudu", cursive;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+  }
+
+  header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #69adc0;
+  }
+
+  #Logo {
+    position: absolute;
+    font-family: "Phudu", cursive;
+    padding-top: 10px;
+    margin: 0;
+    padding-left: 2%;
+    font-size: 30px;
+    letter-spacing: 6px;
+    transition: all 1s;
+    color: white;
+  }
+
+  #Logo:hover {
+    color: black;
+    letter-spacing: 14px;
+  }
+
+  nav {
+    padding-left: 63%;
+    display: flex;
+  }
+
+  @keyframes shadow-animation {
+    0% {
+      box-shadow: 0px 0px 0px white;
+    }
+
+    100% {
+      box-shadow: 0px 0px 30px white;
+    }
+  }
+
+  .contactar {
+    display: flex;
+    position: fixed;
+    margin-left: 890px;
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: #4bbc45;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: white;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0px 0px 0px white;
+    animation: shadow-animation 3s ease-in-out infinite alternate;
+  }
+
+  .mensaje {
+    color: white;
+    font-size: 18px;
+    font-family: "Phudu", cursive;
+    margin: 0px;
+  }
+
+  .whatsapp {
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+  }
+
+  #correo {
+    display: flex;
+    position: fixed;
+    margin-left: 890px;
+    margin-top: 85px;
+    border-radius: 20px;
+    background-color: #e54239;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: white;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0px 0px 0px white;
+    animation: shadow-animation 3s ease-in-out infinite alternate;
+  }
+
+  .texto {
+    padding-top: 5px;
+    color: white;
+    font-size: 18px;
+    font-family: "Phudu", cursive;
+    margin: 0px;
+    padding-right: 25px;
+  }
+
+  .email {
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+  }
+
+  
+#contenedor-modal {
+    position: fixed;
+    background-color: #fea24d;
+    top: 20%;
+    left: 28%;
+    width: 500px;
+    height: 320px;
+    font-size: 10px;
+    color: #d63a5f;
+    border-radius: 12px;
+    border-style: solid;
+    text-align: center;
+    border-color: black;
+    display: none;
+  }
+  
+  
+  #Modaltexto1 {
+    color: #47476d;
+  }
+  
+  #Titulomodal {
+    font-size: 16px;
+    padding-top: 10px;
+    width: fit-content;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+  
+  #EmailModal {
+    width: 200px;
+  }
+  
+  #TextoModal {
+    width: 400px;
+    height: 80px;
+  }
+  
+  .btn {
+  
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Phudu", cursive;
+    background-color: #69adc0;
+    color: white;
+    cursor: pointer;
+    
+  }
+  
+  .contactar:hover {
+    box-shadow: 0px 0px 20px white;
+  }
+  
+  #EmailModal {
+    border-color: black;
+  }
+  
+  #TextoModal {
+    border-color: black;
+  }
+  
+  #Nombre {
+    color: #d63a5f;
+    font-size: 24px;
+  }
+  
+
+  
+
+  h3 {
+    font-family: "Phudu", cursive;
+    padding-left: 30px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .Intro {
+    background-image: url("img/front.jpg"); /* Replace with your image path */
+    background-size: 100%; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    color: white; /* Text color for better visibility on the background */
+    padding: 120px;
+    padding-top: 50px;
+    padding-bottom: 200px;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+
+  .Hola {
+    font-size: 25px;
+    margin-top: 0;
+    animation: bounce 3s infinite; /* Apply the animation to the element */
+  }
+
+  #Nombre {
+    color: #d63a5f;
+    font-size: 20px;
+  }
+
+  .Presentacion {
+    padding-left: 70px;
+    width: 280px;
+    font-size: 16px;
+  }
+
+  .separar {
+    margin-bottom: 30px;
+  }
+
+  .Boton {
+    background-color: #d63a5f;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    margin-left: 100px;
+    font-family: "Phudu", cursive;
+    color: white;
+    font-size: 20px;
+    border-color: white;
+    transition-duration: 0.5s;
+    width: max-content;
+    border-style: solid;
+  }
+
+  .Boton:hover {
+    background-color: #fea24d;
+    cursor: pointer;
+  }
+
+  .Resumen {
+    display: flex;
+    width: 100%;
+    height: 25em;
+    padding-top: 0px;
+  }
+
+  #Skill {
+    background-color: #009b79;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    border-top-color: black;
+    border-bottom-color: black;
+  }
+
+  .colum1 {
+    padding-top: 30px;
+    font-size: medium;
+    color: white;
+    background-color: #fea24d;
+  }
+  .colum2 {
+    padding-top: 30px;
+    font-size: medium;
+    color: white;
+    background-color: #47476d;
+  }
+  .colum3 {
+    padding-top: 30px;
+    font-size: medium;
+    color: white;
+    background-color: #69adc0;
+  }
+
+  .Titulos {
+    font-size: 22px;
+    color: #d63a5f;
+    padding-left: 37px;
+  }
+
+  footer {
+    display: flex;
+
+    background-color: #d63a5f;
+  }
+
+  footer h3 {
+    margin: 0;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    color: white;
+    font-size: large;
+  }
+
+  .foo {
+    color: black;
+    padding-left: 10px;
+    text-shadow: none;
+  }
+
+  .foo1 {
+    padding-left: 0px;
+    color: black;
+    text-shadow: none;
+  }
+
+  .SocialMedia {
+    display: flex;
+
+    margin-left: 34%;
+  }
+
+  a {
+    padding-top: 23px;
+    margin-left: 18px;
+    color: #47476d;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-family: "Phudu", cursive;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #69adc0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Logo {
+    padding-left: 0px;
+    position: absolute;
+    font-family: "Phudu", cursive;
+    font-size: 30px;
+    letter-spacing: 6px;
+    transition: all 1s;
+    color: white;
+    padding-top: 0px;
+  }
+
+  #Logo:hover {
+    color: black;
+    letter-spacing: 14px;
+  }
+
+  nav {
+    padding-left: 63%;
+    display: none;
+  }
+
+  @keyframes shadow-animation {
+    0% {
+      box-shadow: 0px 0px 0px white;
+    }
+
+    100% {
+      box-shadow: 0px 0px 30px white;
+    }
+  }
+
+  .contactar {
+    display: inline-block;
+    position: fixed;
+    border-radius: 20px;
+    background-color: #4bbc45;
+    padding-left: 2px;
+    padding-right: 4px;
+    padding-top: 2px;
+    border: white;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0px 0px 0px white;
+    animation: shadow-animation 3s ease-in-out infinite alternate;
+    margin-left: 30px;
+    margin-top: -320px;
+    z-index: 1000;
+    margin-right: 0px;
+  }
+
+  .mensaje {
+    display: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Phudu", cursive;
+    margin: 0px;
+  }
+
+  .whatsapp {
+    padding-right: 0px;
+    padding-bottom: 1px;
+    padding-top: 2px;
+    padding-left: 3px;
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+  }
+
+  .Intro {
+    display: flex;
+    background-image: none;
+    background-color: #47476d;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+
+  .Hola {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    animation: bounce 3s infinite; /* Apply the animation to the element */
+  }
+
+  #Nombre {
+    color: #d63a5f;
+    font-size: 23px;
+  }
+
+  .Presentacion {
+    padding-left: 0px;
+    margin: 0px;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .separar {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+    margin-top: 0px;
+  }
+
+  .Boton {
+    background-color: #d63a5f;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    font-family: "Phudu", cursive;
+    color: white;
+    font-size: 20px;
+    border-color: white;
+    transition-duration: 0.5s;
+    width: max-content;
+    border-style: solid;
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+
+  .Boton:hover {
+    background-color: #fea24d;
+    cursor: pointer;
+  }
+
+  .Resumen {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    padding-top: 0px;
+    padding: 0;
+  }
+
+  #Skill {
+    background-color: #009b79;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    border-top-color: black;
+    border-bottom-color: black;
+  }
+
+  ul {
+    width: 350px;
+    text-align: justify;
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+
+  li {
+    padding-bottom: 1px;
+  }
+
+  .colum1 {
+    padding-top: 10px;
+    font-size: medium;
+    color: white;
+    background-color: #fea24d;
+    margin: 0px;
+  }
+  .colum2 {
+    padding-top: 10px;
+    font-size: medium;
+    color: white;
+    background-color: #47476d;
+  }
+  .colum3 {
+    padding-top: 10px;
+    font-size: medium;
+    color: white;
+    background-color: #69adc0;
+  }
+
+  .Titulos {
+    font-size: 22px;
+    color: #d63a5f;
+    margin: 10 0 10 0;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+    background-color: #d63a5f;
+    width: 100%;
+  }
+
+  footer h3 {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    color: white;
+    font-size: large;
+    margin: 0;
+    padding-left: 0px;
+  }
+
+  .foo {
+    color: black;
+    padding-left: 0px;
+    text-shadow: none;
+    margin: 0;
+  }
+
+  .foo1 {
+    padding-left: 0px;
+    color: black;
+    text-shadow: none;
+    margin: 0;
+  }
+
+  .foo3 {
+    padding-left: 0px;
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    margin: 0;
+  }
+
+  .SocialMedia {
+    display: block;
+    padding-bottom: 40px;
+    margin-left: 0;
+  }
+
+  footer .SocialMedia a {
+    display: inline-block;
+    color: #47476d;
+    padding-top: 20px;
+    align-items: center;
+    margin: 0;
+    padding-left: 16px;
+  }
+
+  footer h3:first-child {
+    padding-top: 40px;
+  }
+
+  footer .SocialMedia h3:first-child {
+    padding-top: 20px;
+  }
+}
